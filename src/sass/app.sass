@@ -13,7 +13,9 @@
 	display: flex
 	justify-content: space-between 
 	// height: 100px
-	width: 100%
+	width: 90%
+	margin: 0 auto
+	
 	flex-direction: row
 	// position: relative
 .logo
@@ -22,13 +24,16 @@
 		display: inline-block
 		
 		
+		
 .nav
 	position: relative
-	display: inline-block
+	// display: inline-block
 	margin-right: 10px
-	
-	
+	li
+		display: inline-block
+		// position: relative
 	a
+		color: #515151 
 		display: inline-block
 		position: relative
 		margin-right: 20px
@@ -37,29 +42,50 @@
 		font-size: 18px
 .list-down
 	color: red 
-ul
+	position: relative
+	margin-right: 40px
+	width: auto 
+	
+	.icon
+		position: absolute
+		margin-left: 2px
+		bottom: 50%
+		transform: translate(0, 50%)
+.list-down:hover
+	.nav-down
+		opacity: 1; 
+		// Показываем подменю при ховере
+		visibility: visible;
+		
+
+			
+
+.nav-down
+	opacity: 0; 
+	// По умолчанию скрываем подменю
+	visibility: hidden;
+	transition: all .63s ease-out .15s; 
+	// Добавляем анимацию 0.3 сек. и задержку в 0.15 сек.
 	position: absolute
-	// display: none
-	background: coral 
-.list-down:hover,.list-down:active
-	background: teal 
-	ul
-		display: block
-		background: teal 
-.list-down:after
-	content: ""
-	position: absolute
-	width: 5px
-	height: 5px
-	background: teal
+	width: 150px
+	font-size: 24px
+	line-height: 1.8
+
+		
+
 button
 	font-size: 18
 	line-height: 2
 
 .photo
+	.container
+
+		height: 0
+		padding-bottom: 50% 
 	img
 		width: 100%
 		margin-bottom: 70px
+
 
 .section
 	&__title
@@ -82,7 +108,7 @@ button
 			
 		 
 	 
-	  
+		
 
 
 	 
