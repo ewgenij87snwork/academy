@@ -5,41 +5,36 @@
 @import layouts
 @import main
 
+
 .container
-	width: 960px 
+	width: 1060px 
 	margin: 0 auto
 
 .header
 	display: flex
 	justify-content: space-between 
-	// height: 100px
 	width: 90%
 	margin: 0 auto
-	
 	flex-direction: row
-	// position: relative
 .logo
 	width: 20%
 	img
 		display: inline-block
 		
-		
-		
 .nav
 	position: relative
-	// display: inline-block
 	margin-right: 10px
 	li
 		display: inline-block
-		// position: relative
 	a
 		color: #515151 
 		display: inline-block
 		position: relative
-		margin-right: 20px
+		margin-right: 30px
 		font-weight: bold
 		text-decoration: none
 		font-size: 18px
+		font-family: sans-serif 
 .list-down
 	color: red 
 	position: relative
@@ -54,15 +49,10 @@
 .list-down:hover
 	.nav-down
 		opacity: 1; 
-		// Показываем подменю при ховере
 		visibility: visible;
-		
-
-			
 
 .nav-down
 	opacity: 0; 
-	// По умолчанию скрываем подменю
 	visibility: hidden;
 	transition: all .63s ease-out .15s; 
 	// Добавляем анимацию 0.3 сек. и задержку в 0.15 сек.
@@ -71,20 +61,17 @@
 	font-size: 24px
 	line-height: 1.8
 
-		
-
 button
-	font-size: 18
-	line-height: 2
+	font-size: 24px
+	color: #FFF 
+	background: green
+	padding: 10px  
 
 .photo
 	.container
-
-		height: 0
-		padding-bottom: 50% 
+		margin-bottom: 150px
 	img
 		width: 100%
-		margin-bottom: 70px
 
 
 .section
@@ -102,9 +89,11 @@ button
 			height: 7px
 			background: #000
 			position: absolute
-			bottom: -50px 
+			bottom: -90px 			
 	&__text
 		font-size: 18px
+		margin-top: 150px
+		margin-bottom: 50px
 			
 		 
 	 

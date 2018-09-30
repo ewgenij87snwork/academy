@@ -26,6 +26,8 @@ title: Index page
 			<button>Bli IT-konsult</button>
 		</ul>
 	</div>
+	<!-- end header -->
+
 	<!-- begin photo -->
 	<div class="photo">
 		<div class="container">
@@ -41,21 +43,6 @@ title: Index page
 		</div>
 	</div>
 	<!-- end section -->
-	<!-- end header -->
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
 
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
 
 {% endblock %}
