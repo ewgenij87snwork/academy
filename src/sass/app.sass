@@ -1,0 +1,87 @@
+// done by riverco.de
+@import helpers/all
+@import generated/sprite-svg
+@import common
+@import layouts
+@import main
+
+.container
+	width: 960px 
+	margin: 0 auto
+
+.header
+	display: flex
+	justify-content: space-between 
+	// height: 100px
+	width: 100%
+	flex-direction: row
+	// position: relative
+.logo
+	width: 20%
+	img
+		display: inline-block
+		
+		
+.nav
+	position: relative
+	display: inline-block
+	margin-right: 10px
+	
+	
+	a
+		display: inline-block
+		position: relative
+		margin-right: 20px
+		font-weight: bold
+		text-decoration: none
+		font-size: 18px
+.list-down
+	color: red 
+ul
+	position: absolute
+	// display: none
+.list-down:hover,.list-down:active
+	background: teal 
+	ul
+		display: block
+		background: teal 
+.list-down:after
+	content: ""
+	position: absolute
+	width: 5px
+	height: 5px
+	background: teal
+button
+	font-size: 18
+	line-height: 2
+
+.photo
+	img
+		width: 100%
+		margin-bottom: 70px
+
+.section
+	&__title
+		font-size: 62px
+		position: relative
+		font-weight: bold 
+		margin-bottom: 80px
+		text-align: center
+		&:after
+			content: "" 
+			width: 15%
+			left: 50%
+			transform: translate(-50%,0)
+			height: 7px
+			background: #000
+			position: absolute
+			bottom: -50px 
+	&__text
+		font-size: 18px
+			
+		 
+	 
+	  
+
+
+	 

@@ -1,0 +1,59 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<!-- begin header -->
+	<div class="header">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="nav">
+			<a href="#">Program</a>
+			<a href="#">For foretag</a>
+			<a href="#" class="list-down">Om Academy</a>
+				<ul>
+					<li><a href="#">Lorem ipsum.</a></li>
+					<li><a href="#">Lorem ipsum.</a></li>
+					<li><a href="#">Lorem ipsum.</a></li>
+					<li><a href="#">Lorem ipsum.</a></li>
+				</ul>
+			
+			<button>Bli IT-konsult</button>
+		</div>
+	</div>
+	<!-- begin photo -->
+	<div class="photo">
+		<div class="container">
+			<img src="img/image.jpg" alt="">
+		</div>
+	</div>
+	<!-- end photo -->
+	<!-- begin section -->
+	<div class="section">
+		<div class="container">
+			<h1 class="section__title">Vara konsulter</h1>
+			<p class="section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda adipisci commodi cum nobis, architecto amet nostrum obcaecati eius! Iste ea dolore tempora illum, voluptatum dolor deleniti consequuntur itaque veniam doloribus quos dolores, obcaecati eaque laboriosam voluptatibus ex voluptas fugiat magni mollitia tenetur placeat expedita. Reprehenderit aut, delectus quidem rem.</p>
+		</div>
+	</div>
+	<!-- end section -->
+	<!-- end header -->
+	
+	{# partial example #}
+	{% include "partials/_header.html" %}
+
+	{# mixin example #}
+	{{mixins.icon('facebook')}}
+
+
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #}
+
+{% endblock %}
