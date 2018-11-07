@@ -21,9 +21,9 @@
 	+r(1000) 
 		align-items: center
 		flex-wrap: wrap
+		margin-bottom: 30px
 	+r(500) 
 		flex-direction: column
-		margin-bottom: 30px
 	
 	
 .logo
@@ -50,19 +50,24 @@
 		+r(650) 
 			order: 3
 			margin: 0
+
 .nav
 	position: relative
 	margin: 0 auto
 	margin-right: 0
 	margin-bottom: 20px
+	+r(1000) 
+		margin: 0
+		// margin-left: 30px
+	
 	+r(650) 
 		min-width: 50vw		
 		left: 50%
 		transform: translate(-40%, 0)
 	+r(500) 
+		margin: 0
 		display: flex
 		flex-direction: column
-		margin: 0
 		align-items: center
 		transform: translate(10%, 0)
 		left: 0
