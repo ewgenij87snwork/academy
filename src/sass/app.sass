@@ -21,33 +21,58 @@
 	+r(1000) 
 		align-items: center
 		flex-wrap: wrap
+	+r(500) 
+		flex-direction: column
+		margin-bottom: 30px
+	
 	
 .logo
 	align-self: center
 	margin-right: 20px
 	+r(1000) 
 		margin: 0
+		order: 2
+	+r(650) 
 		order: 1
 	img
 		display: inline-block
-		
+
+.navigation
+		+r(1000) 
+			// margin-right: 100px
+			order: 1
+			min-width: 80vw
+			margin: 0 auto
+			margin-top: 10px
+			margin-left: 80px
+			display: flex
+			justify-content: center
+		+r(650) 
+			order: 3
+			margin: 0
 .nav
 	position: relative
 	margin: 0 auto
 	margin-right: 0
 	margin-bottom: 20px
-	+r(1000) 
-		// margin-right: 100px
-		order: 1
-		min-width: 80vw
-		margin: 0 auto
-		margin-top: 10px
-		margin-left: 80px
+	+r(650) 
+		min-width: 50vw		
+		left: 50%
+		transform: translate(-40%, 0)
+	+r(500) 
 		display: flex
-		justify-content: center
+		flex-direction: column
+		margin: 0
+		align-items: center
+		transform: translate(10%, 0)
+		left: 0
+		right: 0
+	
 	li
 		display: inline-block
-		line-height: 0
+		+r(500) 
+			margin-bottom: 15px
+		
 	a
 		color: #515151 
 		display: inline-block
@@ -62,6 +87,9 @@
 	position: relative
 	margin-right: 40px
 	width: auto 
+	+r(500)
+		margin-right: 0
+		margin-bottom: 50px
 	.icon
 		position: absolute
 		margin-left: 2px
@@ -91,6 +119,11 @@
 		// position: relative
 		+r(1000)
 			order: 3
+		+r(650) 
+			order: 2
+		+r(500) 
+			margin-bottom: 25px
+		
 .photo
 	.container
 		margin-bottom: 150px
