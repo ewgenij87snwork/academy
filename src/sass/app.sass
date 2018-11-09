@@ -17,14 +17,12 @@
 	margin: 0 auto
 	flex-direction: row
 	max-width: 1200px
-	// max-height: 120px 
 	+r(1000) 
 		align-items: center
 		flex-wrap: wrap
 		margin-bottom: 30px
 	+r(500) 
 		flex-direction: column
-	
 	
 .logo
 	align-self: center
@@ -101,18 +99,32 @@
 		bottom: 50%
 		transform: translate(0, 50%)
 .list-down:hover
+
 	.nav-down
 		opacity: 1; 
 		visibility: visible;
+		
+
 .nav-down
 	opacity: 0; 
 	visibility: hidden;
 	transition: all .63s ease-out .15s; 
 	// Добавляем анимацию 0.3 сек. и задержку в 0.15 сек.
 	position: absolute
-	width: 150px
-	font-size: 24px
-	line-height: 1.8
+	font-size: 1rem
+	background: rgba(0,0,0,.6)
+	li
+		width: 100%
+		&:last-child
+			padding-bottom: 5%
+		a
+			padding: 5% 5% 0
+				
+
+			margin: 0
+			color: #FFF  
+			text-align: center
+
 .header
 	button
 		font-size: 24px
@@ -121,7 +133,6 @@
 		padding: 10px 
 		line-height: 1.4
 		min-width: 165px
-		// position: relative
 		+r(1000)
 			order: 3
 		+r(650) 
@@ -131,30 +142,30 @@
 		
 .photo
 	.container
-		margin-bottom: 150px
+		margin-bottom: 7%
 	img
 		width: 100%
 
 .section
 	&__title
-		font-size: 62px
+		font-size: 4em
 		position: relative
 		font-weight: bold 
-		margin-bottom: 80px
+		margin-bottom: 7%
 		text-align: center
+		padding: 0 5% 5%
 		&:after
 			content: "" 
-			width: 15%
+			width: 35%
 			left: 50%
 			transform: translate(-50%,0)
-			height: 7px
+			height: 3px
 			background: #000
 			position: absolute
-			bottom: -90px 			
+			bottom: -7% 			
 	&__text
 		font-size: 18px
-		margin-top: 150px
-		margin-bottom: 50px
+		padding: 7% 
 			
 		 
 	 
