@@ -117,18 +117,23 @@
 	// Добавляем анимацию 0.3 сек. и задержку в 0.15 сек.
 	position: absolute
 	font-size: 1rem
-	background: rgba(0,0,0,.6)
+	background: rgba(255,255,255,.6)
+	border-radius: 0 0 15px 15px
+	z-index: 1
 	li
 		width: 100%
+		text-align: center
 		&:last-child
 			padding-bottom: 5%
 		a
+			line-height: 0
+			min-height: 20px
 			padding: 5% 5% 0
-				
-
-			margin: 0
-			color: #FFF  
-			text-align: center
+			padding-top: 6%
+			margin: 5px
+			color: #515151   
+			position: relative
+			bottom: -5px
 			
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 
@@ -138,9 +143,6 @@
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 .p15
 	a
-		// $w : 274px;
-		// $h: 58px;
-		// @include a($w,$h);
 		line-height: 1;
 		&:hover
 			transition: .3s
@@ -224,6 +226,10 @@
 	a
 		.t2
 			right: -37px;
+.nav-down
+	a
+		.t2
+			right: -13px;
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 
@@ -241,6 +247,12 @@
 		padding: 10px 
 		line-height: 1.4
 		min-width: 165px
+		transform: scale(.96, .96);
+		transition: all .3s;
+		border: 2px solid transparent
+		&:hover
+			transform: scale(1, 1);
+			// border: 2px solid #000
 		+r(1000)
 			order: 3
 		+r(650) 
@@ -261,7 +273,7 @@
 		font-weight: bold 
 		margin-bottom: 7%
 		text-align: center
-		padding: 0 5% 5%
+		// padding: 5%
 		+r(650)
 			font-size: 4em
 		&:after
@@ -277,7 +289,8 @@
 		font-size: 18px
 		padding: 7% 
 		text-indent: 1.5em
-		 
+		word-wrap: break-word
+		
 	 
 		
 
