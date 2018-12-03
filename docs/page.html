@@ -10,9 +10,18 @@
     <link rel="preload" href="css/app.css" as="style" />
     <link rel="stylesheet" media="all" href="css/app.css" />
   </head>
-  <body>
+  <body id="loading">
     <!-- BEGIN content -->
     <div class="out">
+      <!-- begin preloader -->
+      <div class="preloader">
+        <div id="loader-wrapper">
+          <div id="loader"></div>
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+        </div>
+      </div>
+      <!-- end preloader -->
       <!-- begin header -->
       <div class="header">
         <div class="logo">
