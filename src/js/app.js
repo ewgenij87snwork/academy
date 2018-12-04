@@ -7,11 +7,10 @@ sayHello();
 // For understand how time need -- must test in crossbrowser (chrome extention, network)
 
 document.addEventListener('DOMContentLoaded', function() {
-  toggleMenu();
   setTimeout(function() {
     'use strict';
     var body = document.getElementById('loading');
     body.classList.add('loaded');
-  }, 3000);
+  }, 1000);
 });
 
