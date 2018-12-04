@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'use strict';
     var body = document.getElementById('loading');
     body.classList.add('loaded');
-  }, 1000);
+  }, 2000);
 });
 
